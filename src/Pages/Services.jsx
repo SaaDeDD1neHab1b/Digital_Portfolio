@@ -1,4 +1,4 @@
-import "./CSS/styles.css"
+import "../Components/CSS/styles.css"
 
 
 export default function Services(props) {

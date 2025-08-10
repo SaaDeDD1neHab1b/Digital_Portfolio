@@ -1,29 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
-import Button from './Components/Button';
 import Navbar from './Components/Navbar';
+import About from "./Pages/About"
+import Projects from "./Pages/Projects"
+import Home from "./Pages/Home"
+import Services from "./Pages/Services"
+import Contact from "./Pages/Contact"
+
+
 
 function App() {
   console.log(window.location)
+  let component
+  switch (window.location.pathname) {
+    case "/Digital_Portfolio":
+      component = <Home />
+      break
+    case "/About":
+      component = <About />
+      break
+    case "/Contact":
+      component = <Contact />
+      break
+    case "/Projects":
+      component = <Projects />
+      break
+    case "/Services":
+      component = <Services />
+      break
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        
-        <Navbar/>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Button url="#miao" title="Press me!!"/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      {component}
     </div>
   );
 }
