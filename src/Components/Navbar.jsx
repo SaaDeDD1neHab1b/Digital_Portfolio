@@ -1,15 +1,17 @@
 import Button from "./Button";
+import "./CSS/styles.css"
 
-function Navbar(props) {
+
+export default function Navbar(props) {
     return (
-        <nav className="bg-blue-800 p-10 w-full">
-            <Button url="#miao" title="Home" />
-            <Button url="#miao" title="About" />
-            <Button url="#miao" title="Projects" />
-            <Button url="#miao" title="Services" />
-            <Button url="#miao" title="Contact" />
+        <nav>
+            <Button css="active" url="/" title="Home"/>
+            <ul>
+                <li><Button url="/About" title="About" /></li>
+                <li><Button url="/Projects" title="Projects" /></li>
+                <li><Button url="/Services" title="Services" /></li>
+                <li><Button url="/Contactme" title="Contact" /></li>
+            </ul>
         </nav>
     );
 }
-
-export default Navbar;

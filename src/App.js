@@ -4,9 +4,11 @@ import Button from './Components/Button';
 import Navbar from './Components/Navbar';
 
 function App() {
+  console.log(window.location)
   return (
     <div className="App">
       <header className="App-header">
+        
         <Navbar/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
