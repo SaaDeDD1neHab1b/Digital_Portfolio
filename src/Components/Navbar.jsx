@@ -7,10 +7,10 @@ export default function Navbar(props) {
         <nav>
             <Button css="active" url="/Digital_Portfolio" title="Home"/>
             <ul>
-                <li><Button url="About" title="About" /></li>
-                <li><Button url="Projects" title="Projects" /></li>
-                <li><Button url="Services" title="Services" /></li>
-                <li><Button url="Contact" title="Contact" /></li>
+                <Button url="About" title="About" />
+                <Button url="Projects" title="Projects" />
+                <Button url="Services" title="Services" />
+                <Button url="Contact" title="Contact" />
             </ul>
         </nav>
     );

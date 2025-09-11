@@ -28,14 +28,8 @@ nav {
   @apply border-2 border-blue-800 bg-black py-2 px-5 rounded-xl shadow-xl shadow-blue-500/50 mx-2 my-3 flex text-2xl text-white
 }
 
-
-li {
-  @apply my-5 mx-3
-}
-
-
 .active-btn {
-  @apply border-8 border-white bg-black py-2 px-5 rounded-xl shadow-xl shadow-blue-500/50 mx-2 my-3 flex
+  @apply border-8 border-white bg-black py-2 px-5 rounded-xl shadow-xl shadow-blue-500/50 mx-2 my-3 flex text-2xl text-white
 }
   
 
@@ -44,6 +38,9 @@ li {
 }
 
 
+li {
+  @apply my-5 mx-3
+}
 
 ul {
   @apply list-none flex m-0 p-0
