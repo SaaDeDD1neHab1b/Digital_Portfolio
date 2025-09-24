@@ -6,7 +6,7 @@ import Home from "./Pages/Home"
 import Services from "./Pages/Services"
 import Contact from "./Pages/Contact"
 import { Route, Routes } from "react-router-dom"
-
+import Footer from "./Components/Footer"
 
 function App() {
 
@@ -20,6 +20,7 @@ function App() {
         <Route path="/Services" element={<Services />} />
         <Route path="/Contact" element={<Contact />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }
