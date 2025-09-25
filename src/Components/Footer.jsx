@@ -5,7 +5,7 @@ import IconLink from "./IconLink";
 export default function Footer(props) {
     return (
         <footer>
-            <IconLink url="https://www.linkedin.com"/>
+            <IconLink url="https://www.linkedin.com" color="red" name="BsLinkedin"/>
         </footer>
     );
 }
