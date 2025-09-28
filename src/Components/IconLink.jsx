@@ -5,27 +5,36 @@ import { FaGithub } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { RxCross2 } from "react-icons/rx";
 import { IconContext } from "react-icons";
-import { useState } from "react";
-import { LuProportions } from "react-icons/lu";
+
 
 
 export default function IconLink(props) {
     var Component = RxCross2;
-    const icons = [BsLinkedin, FaInstagram, FaGithub, IoIosMail, RxCross2]
 
     const iconColor = props.color === "" ? "red" : props.color;
     const iconSize = props.size === "" ? "1.5em" : props.size;
 
     console.log(Component)
 
-    // No me funciona la indexOf (porque no lo encuentra porque compara un string y on objeto)
     if (props.name !== " ") {
-        Component = icons.at(icons.indexOf(props.name))
+        switch (props.name) {
+            case "BsLinkedin":
+                Component = BsLinkedin;
+                break;
+            case "FaInstagram":
+                Component = FaInstagram;
+                break;;
+            case "FaGithub":
+                Component = FaGithub;
+                break;
+            case "IoIosMail":
+                Component = IoIosMail;
+                break;
+            case "RxCross2":
+                Component = RxCross2;
+                break;
+        }
     }
-
-    console.log(props.name)
-    console.log(icons.indexOf(props.name))
-    console.log(Component)
 
     return (
         <a href={props.url}>
@@ -33,7 +42,7 @@ export default function IconLink(props) {
                 <div >
                     <Component />
                 </div>
-            </IconContext.Provider>;
+            </IconContext.Provider>
         </a>
 
     );
