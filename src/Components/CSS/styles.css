@@ -6,9 +6,10 @@
   border-sizing: border-box;
 }
 
-.side{
-  @apply bg-white h-full p-10 inline
+body {
+  @apply m-0
 }
+
 
 main {
   @apply inline-block
@@ -47,6 +48,11 @@ ul {
 h1, h2, h3, h4, h5, h6{
   @apply text-white;
 }
+
+p {
+  @apply text-white text-justify
+}
+
 
 h1 {
   @apply text-3xl font-bold 

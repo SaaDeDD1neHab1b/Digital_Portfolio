@@ -3,10 +3,9 @@
 @tailwind utilities;
 
 body {
-    background-color: black;
+  background-color: black;
 }
 
 .App {
-  @apply text-center
+  @apply text-center 
 }
-
