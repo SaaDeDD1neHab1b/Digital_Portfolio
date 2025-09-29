@@ -6,21 +6,16 @@
   border-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.side{
+  @apply bg-white h-full p-10 inline
+}
+
+main {
+  @apply inline-block
 }
 
 main * {
-  @apply m-5
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  @apply m-5 
 }
 
 nav {
@@ -49,14 +44,31 @@ ul {
   @apply list-none flex
 }
 
+h1, h2, h3, h4, h5, h6{
+  @apply text-white;
+}
+
 h1 {
-  color: white;
+  @apply text-3xl font-bold 
+}
+
+h2 {
+  @apply text-xl
+}
+
+h3 {
+  @apply text-start text-xl font-bold
 }
 
 footer{
-  @apply bg-slate-700 flex flex-row items-center
+  @apply bg-slate-300 h-full
+}
+
+
+footer h1{
+  @apply text-black text-sm
 }
 
 footer a {
-  @apply m-5
+  @apply m-5 basis-5 inline-block 
 }
