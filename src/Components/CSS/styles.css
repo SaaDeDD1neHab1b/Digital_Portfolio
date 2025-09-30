@@ -16,7 +16,7 @@ section {
 }
 
 main {
-  @apply h-full w-full 
+  @apply h-full w-full text-center
 }
 
 main * {
@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  @apply text-white text-justify w-1/2
+  @apply text-white text-justify mx-20
 }
 
 
@@ -69,6 +69,10 @@ footer a {
   @apply m-5 basis-5 inline-block
 }
 
+img {
+  @apply border-2 border-white text-white h-1/2 w-1/2
+}
+
 .link-btn {
   @apply py-2 px-5 flex text-xl text-white
 }
@@ -84,4 +88,18 @@ footer a {
 
 .side-bar {
   @apply w-1/5 border-2 border-white
+  
+}
+
+.realtiveEx {
+  @apply relative w-full h-96
+}
+
+.imgAbs{
+  @apply absolute right-0 bottom-0 h-3/5 w-1/2
+}
+
+.divAbs {
+    @apply absolute left-0 top-0 h-3/5 w-1/2 bg-white
+
 }
