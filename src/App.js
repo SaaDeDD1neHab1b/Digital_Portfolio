@@ -7,20 +7,29 @@ import Services from "./Pages/Services"
 import Contact from "./Pages/Contact"
 import { Route, Routes } from "react-router-dom"
 import Footer from "./Components/Footer"
+import SideBar from './Components/SideBar';
 
 function App() {
 
   return (
     <div className="App">
-      <Navbar />
-      <Routes>
-        <Route path="/Digital_portfolio" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Projects" element={<Projects />} />
-        <Route path="/Services" element={<Services />} />
-        <Route path="/Contact" element={<Contact />} />
-      </Routes>
-      <Footer/>
+
+      <header>
+        <Navbar />
+      </header>
+      <section>
+        <SideBar />
+        <Routes>
+          <Route path="/Digital_portfolio" element={<Home />} />
+          <Route path="/About" element={<About />} />
+          <Route path="/Projects" element={<Projects />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/Contact" element={<Contact />} />
+        </Routes>
+        <SideBar />
+      </section>
+
+      <Footer />
     </div>
   );
 }
