@@ -92,7 +92,7 @@ img {
 }
 
 .realtiveEx {
-  @apply relative w-full h-96
+  @apply relative w-full h-96 m-0
 }
 
 .imgAbs{

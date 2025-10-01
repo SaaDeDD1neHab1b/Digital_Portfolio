@@ -5,11 +5,17 @@ import Projects from "./Pages/Projects"
 import Home from "./Pages/Home"
 import Services from "./Pages/Services"
 import Contact from "./Pages/Contact"
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes, useNavigate} from "react-router-dom"
 import Footer from "./Components/Footer"
 import SideBar from './Components/SideBar';
+import { useEffect } from 'react';
 
 function App() {
+  const navigate = useNavigate()
+  useEffect(() => {
+    if (window.location.href === window.location.origin + "/") navigate("Digital_portfolio")
+  }, []);
+
 
   return (
     <div className="App">

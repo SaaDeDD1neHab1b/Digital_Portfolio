@@ -13,9 +13,7 @@ export default function IconLink(props) {
 
     const iconColor = props.color === "" ? "red" : props.color;
     const iconSize = props.size === "" ? "1.5em" : props.size;
-
-    console.log(Component)
-
+    
     if (props.name !== " ") {
         switch (props.name) {
             case "BsLinkedin":
