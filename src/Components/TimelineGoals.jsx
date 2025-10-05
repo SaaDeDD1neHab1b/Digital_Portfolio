@@ -14,10 +14,13 @@ export default function TimelineGoals(props) {
     return (
         <div className="realtiveEx">
             <div className="divAbs">
-                <div>
-                    {/* CONTINUE DEVOLPING THE BUTTONS AND DIPLAY INFORMATION*/ }
+                <div className="divOver">
+                    {/* CONTINUE DEVOLPING THE BUTTONS AND DIPLAY INFORMATION*/}
                     {productosGaming.map((item) => {
-                        return <a className="active-btn" href="#test">{item.nombre}</a>
+                        return (
+                            <a className="active-btn" href="#test">{item.nombre}</a>
+
+                        )
                     })}
                 </div>
 
