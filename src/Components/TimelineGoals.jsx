@@ -18,7 +18,7 @@ export default function TimelineGoals(props) {
                     {/* CONTINUE DEVOLPING THE BUTTONS AND DIPLAY INFORMATION*/}
                     {productosGaming.map((item) => {
                         return (
-                            <a className="active-btn" href="#test">{item.nombre}</a>
+                            <a className="btnsTimeGoals" href="#test">{item.nombre}</a>
 
                         )
                     })}
