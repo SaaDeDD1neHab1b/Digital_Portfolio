@@ -7,7 +7,6 @@ import { RxCross2 } from "react-icons/rx";
 import { IconContext } from "react-icons";
 
 
-
 export default function IconLink(props) {
     var Component = RxCross2;
 

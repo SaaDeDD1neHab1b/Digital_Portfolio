@@ -79,7 +79,6 @@ export default function TimelineGoals(props) {
         }
     ]
 
-
     return (
         <div className="realtiveEx">
             <div className="divAbs">
@@ -105,7 +104,6 @@ export default function TimelineGoals(props) {
 
 
             </div>
-            {/* Arreglar el problema de tamaño de las imagenes de mas altura que anchura*/}
             <img className="imgAbs" src={productosGaming[selectedOption].Img} alt="no se muestra" />
         </div>
     );
